@@ -1,0 +1,90 @@
+file 3081 1745319000                                            
+version 3
+run STM-16-0-20250422-12:49:20-9080
+attr configname STM-16
+attr datetime 20250422-12:49:20
+attr datetimef 20250422-124920
+attr experiment STM-16
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network p2pNetworkExtended
+attr processid 9080
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config *.visualizer.*.enabled true
+config *.visualizer.*.animationSpeed 20
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayPacketDrops true
+config *.visualizer.*.displayLabels true
+config **.scalar-recording true
+config **.vector-recording true
+config *.lteA.stmLevel 16
+config *.lteB.stmLevel 16
+config *.lteA.numTributaries 2
+config *.lteB.numTributaries 2
+config *.sourceA_1.packetInterval 12.5us
+config *.sourceA_1.packetSize 3888
+config *.sourceA_2.packetInterval 12.5us
+config *.sourceA_2.packetSize 3888
+config *.sourceB_1.packetInterval 12.5us
+config *.sourceB_1.packetSize 3888
+config *.sourceB_2.packetInterval 12.5us
+config *.sourceB_2.packetSize 3888
+config network p2pNetworkExtended
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.animationSpeed 20
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayPacketDrops true
+config *.visualizer.*.displayLabels true
+config **.scalar-recording true
+config **.vector-recording true
+
+vector 0 p2pNetworkExtended.lteA stmWorkingSent:vector ETV
+attr recordingmode vector
+attr source stmWorkingSent
+attr title "STM sent on working line"
+vector 1 p2pNetworkExtended.lteA stmProtectionSent:vector ETV
+attr recordingmode vector
+attr source stmProtectionSent
+attr title "STM sent on protection line"
+vector 2 p2pNetworkExtended.lteA stmWorkingReceived:vector ETV
+attr recordingmode vector
+attr source stmWorkingReceived
+attr title "STM received on working line"
+vector 3 p2pNetworkExtended.lteA stmProtectionReceived:vector ETV
+attr recordingmode vector
+attr source stmProtectionReceived
+attr title "STM received on protection line"
+vector 4 p2pNetworkExtended.lteA loadSTM:vector ETV
+attr recordingmode vector
+attr source loadSTM
+attr title "load STM"
+vector 5 p2pNetworkExtended.lteB stmWorkingSent:vector ETV
+attr recordingmode vector
+attr source stmWorkingSent
+attr title "STM sent on working line"
+vector 6 p2pNetworkExtended.lteB stmProtectionSent:vector ETV
+attr recordingmode vector
+attr source stmProtectionSent
+attr title "STM sent on protection line"
+vector 7 p2pNetworkExtended.lteB stmWorkingReceived:vector ETV
+attr recordingmode vector
+attr source stmWorkingReceived
+attr title "STM received on working line"
+vector 8 p2pNetworkExtended.lteB stmProtectionReceived:vector ETV
+attr recordingmode vector
+attr source stmProtectionReceived
+attr title "STM received on protection line"
+vector 9 p2pNetworkExtended.lteB loadSTM:vector ETV
+attr recordingmode vector
+attr source loadSTM
+attr title "load STM"
+

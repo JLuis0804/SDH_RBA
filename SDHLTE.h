@@ -27,11 +27,16 @@ class SDHLTE : public cSimpleModule {
     int stmCountProtectionTx = 0;
     int stmCountWorkingRx = 0;
     int stmCountProtectionRx = 0;
+    int countLoadSTM = 0;
+    int countTramasSTM = 0;
 
     simsignal_t workingSignalTx;
     simsignal_t protectionSignalTx;
     simsignal_t workingSignalRx;
     simsignal_t protectionSignalRx;
+    simsignal_t loadSTMSignal=registerSignal("loadSTM");
+    simsignal_t tramasSTMSignal;
+
 
   protected:
     virtual void initialize() override;

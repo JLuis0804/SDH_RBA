@@ -1,0 +1,141 @@
+version 3
+run Protection-0-20250504-11:20:22-15456
+attr configname Protection
+attr datetime 20250504-11:20:22
+attr datetimef 20250504-112022
+attr experiment Protection
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network p2pNetwork
+attr processid 15456
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config *.lteA.useProtection true
+config *.lteB.useProtection true
+config *.lteA.protectionSwitchTime 0.5s
+config *.lteB.protectionSwitchTime 0.5s
+config network p2pNetwork
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.animationSpeed 20
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayPacketDrops true
+config *.visualizer.*.displayLabels true
+config **.scalar-recording true
+config **.vector-recording true
+
+par p2pNetwork.lteA.lineOut[0].channel typename "\"inet.node.sdh.p2pNetwork.p2pNetwork.FiberLine\""
+par p2pNetwork.lteA.lineOut[0].channel disabled false
+attr mutable ""
+par p2pNetwork.lteA.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par p2pNetwork.lteA.lineOut[0].channel datarate 1.5552e+08bps
+attr mutable ""
+attr unit bps
+par p2pNetwork.lteA.lineOut[0].channel ber 0
+attr mutable ""
+par p2pNetwork.lteA.lineOut[0].channel per 0
+attr mutable ""
+par p2pNetwork.lteA.lineOut[1].channel typename "\"inet.node.sdh.p2pNetwork.p2pNetwork.FiberLine\""
+par p2pNetwork.lteA.lineOut[1].channel disabled false
+attr mutable ""
+par p2pNetwork.lteA.lineOut[1].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par p2pNetwork.lteA.lineOut[1].channel datarate 1.5552e+08bps
+attr mutable ""
+attr unit bps
+par p2pNetwork.lteA.lineOut[1].channel ber 0
+attr mutable ""
+par p2pNetwork.lteA.lineOut[1].channel per 0
+attr mutable ""
+par p2pNetwork.lteB.lineOut[0].channel typename "\"inet.node.sdh.p2pNetwork.p2pNetwork.FiberLine\""
+par p2pNetwork.lteB.lineOut[0].channel disabled false
+attr mutable ""
+par p2pNetwork.lteB.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par p2pNetwork.lteB.lineOut[0].channel datarate 1.5552e+08bps
+attr mutable ""
+attr unit bps
+par p2pNetwork.lteB.lineOut[0].channel ber 0
+attr mutable ""
+par p2pNetwork.lteB.lineOut[0].channel per 0
+attr mutable ""
+par p2pNetwork.lteB.lineOut[1].channel typename "\"inet.node.sdh.p2pNetwork.p2pNetwork.FiberLine\""
+par p2pNetwork.lteB.lineOut[1].channel disabled false
+attr mutable ""
+par p2pNetwork.lteB.lineOut[1].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par p2pNetwork.lteB.lineOut[1].channel datarate 1.5552e+08bps
+attr mutable ""
+attr unit bps
+par p2pNetwork.lteB.lineOut[1].channel ber 0
+attr mutable ""
+par p2pNetwork.lteB.lineOut[1].channel per 0
+attr mutable ""
+par p2pNetwork.sourceA typename "\"inet.node.sdh.PDHSource\""
+par p2pNetwork.sourceA packetInterval 1e-05s
+attr unit s
+par p2pNetwork.sourceA packetSize 300
+par p2pNetwork.sinkA typename "\"inet.node.sdh.PDHSink\""
+par p2pNetwork.lteA typename "\"inet.node.sdh.SDHLTE\""
+par p2pNetwork.lteA stmLevel 1
+par p2pNetwork.lteA numTributaries 1
+par p2pNetwork.lteA useProtection true
+par p2pNetwork.lteA protectionSwitchTime 0.5s
+attr unit s
+scalar p2pNetwork.lteA stmProtectionReceived:last 4000
+attr recordingmode last
+attr source stmProtectionReceived
+attr title "STM received on protection line, last"
+scalar p2pNetwork.lteA stmWorkingReceived:last 3999
+attr recordingmode last
+attr source stmWorkingReceived
+attr title "STM received on working line, last"
+scalar p2pNetwork.lteA stmProtectionSent:last 4001
+attr recordingmode last
+attr source stmProtectionSent
+attr title "STM sent on protection line, last"
+scalar p2pNetwork.lteA stmWorkingSent:last 3999
+attr recordingmode last
+attr source stmWorkingSent
+attr title "STM sent on working line, last"
+par p2pNetwork.lteB typename "\"inet.node.sdh.SDHLTE\""
+par p2pNetwork.lteB stmLevel 1
+par p2pNetwork.lteB numTributaries 1
+par p2pNetwork.lteB useProtection true
+par p2pNetwork.lteB protectionSwitchTime 0.5s
+attr unit s
+scalar p2pNetwork.lteB stmProtectionReceived:last 4000
+attr recordingmode last
+attr source stmProtectionReceived
+attr title "STM received on protection line, last"
+scalar p2pNetwork.lteB stmWorkingReceived:last 3999
+attr recordingmode last
+attr source stmWorkingReceived
+attr title "STM received on working line, last"
+scalar p2pNetwork.lteB stmProtectionSent:last 4001
+attr recordingmode last
+attr source stmProtectionSent
+attr title "STM sent on protection line, last"
+scalar p2pNetwork.lteB stmWorkingSent:last 3999
+attr recordingmode last
+attr source stmWorkingSent
+attr title "STM sent on working line, last"
+par p2pNetwork.sourceB typename "\"inet.node.sdh.PDHSource\""
+par p2pNetwork.sourceB packetInterval 1e-05s
+attr unit s
+par p2pNetwork.sourceB packetSize 300
+par p2pNetwork.sinkB typename "\"inet.node.sdh.PDHSink\""
+par p2pNetwork typename "\"inet.node.sdh.p2pNetwork.p2pNetwork\""
+

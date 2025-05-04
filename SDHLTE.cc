@@ -19,6 +19,8 @@ void SDHLTE::initialize() {
     protectionSignalTx = registerSignal("stmProtectionSent");
     workingSignalRx = registerSignal("stmWorkingReceived");
     protectionSignalRx = registerSignal("stmProtectionReceived");
+    loadSTMSignal = registerSignal("loadSTM");
+    tramasSTMSignal = registerSignal("tramasSTM");
 
     double bitrate = 155.52e6 * stmLevel;  // STM-n velocidad
     for (int i = 0; i < gateSize("lineOut"); ++i) {
@@ -55,6 +57,7 @@ void SDHLTE::handleMessage(cMessage *msg) {
 
             int maxBytes = 2430 * stmLevel;
             int usedBytes = 0;
+
 
             auto *vc = new SDHVirtualContainer("VC4");
             vc->setVcType(VC4);
@@ -95,6 +98,10 @@ void SDHLTE::handleMessage(cMessage *msg) {
 
             // Color según carga
             double loadRatio = (double)usedBytes / maxBytes;
+            emit(loadSTMSignal, loadRatio);  // como porcentaje
+
+
+
 
             bool useProtectionNow = useProtection && (protectionSwitchTime >= 0 && simTime() >= protectionSwitchTime);
 
@@ -144,6 +151,7 @@ void SDHLTE::handleMessage(cMessage *msg) {
             int t = vc->getTributaryIndex();
 
             // 🔍 Solo si hay gate de salida
+
             int numPackets = vc->getPayloadsArraySize();
             if (numPackets > 0 && t >= 0 && t < gateSize("pdhOut") && gate("pdhOut", t)->isConnected()) {
                 simtime_t totalFrameTime = SimTime(125, SIMTIME_US);
@@ -185,6 +193,7 @@ void SDHLTE::finish() {
     EV << "STM transmitidos por línea de protección: " << stmCountProtectionTx << endl;
     EV << "STM recibidos por línea operativa: " << stmCountWorkingRx << endl;
     EV << "STM recibidos por línea de protección: " << stmCountProtectionRx << endl;
+
 }
 
 
