@@ -1,0 +1,4 @@
+MSGFILES = SDHMessages.msg
+
+MSGINC = $(MSGFILES:.msg=_m.h)
+MSGOBJ = $(MSGFILES:.msg=_m.o)
