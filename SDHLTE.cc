@@ -20,7 +20,7 @@ void SDHLTE::initialize() {
     workingSignalRx = registerSignal("stmWorkingReceived");
     protectionSignalRx = registerSignal("stmProtectionReceived");
     loadSTMSignal = registerSignal("loadSTM");
-    tramasSTMSignal = registerSignal("tramasSTM");
+
 
     double bitrate = 155.52e6 * stmLevel;  // STM-n velocidad
     for (int i = 0; i < gateSize("lineOut"); ++i) {
@@ -161,7 +161,6 @@ void SDHLTE::handleMessage(cMessage *msg) {
                     cPacket *pdh = vc->getPayloads(j).dup();
                     simtime_t delay = j * packetSpacing;
                     sendDelayed(pdh, delay, "pdhOut", t);
-
                     EV << "Sent PDH packet " << pdh->getName()
                        << " from VC[" << i << "] to pdhOut[" << t << "] at t+" << delay << endl;
                 }

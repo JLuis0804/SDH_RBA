@@ -35,7 +35,7 @@ class SDHLTE : public cSimpleModule {
     simsignal_t workingSignalRx;
     simsignal_t protectionSignalRx;
     simsignal_t loadSTMSignal=registerSignal("loadSTM");
-    simsignal_t tramasSTMSignal;
+
 
 
   protected:
