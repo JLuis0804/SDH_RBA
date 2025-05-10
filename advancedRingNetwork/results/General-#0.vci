@@ -1,0 +1,106 @@
+file 4809188 1746693449                                         
+version 3
+run General-0-20250508-10:37:23-10764
+attr configname General
+attr datetime 20250508-10:37:23
+attr datetimef 20250508-103723
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network AdvancedRingNetwork
+attr processid 10764
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config network AdvancedRingNetwork
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayPacketDrops true
+config *.visualizer.*.displayLabels true
+config *.visualizer.*.animationSpeed 20
+config *.source*.packetInterval 30us
+config *.source*.packetSize 300
+config **.stmLevel 1
+config **.numTributaries 2
+
+vector 0 AdvancedRingNetwork.adm1 stmReenviada:vector ETV
+attr recordingmode vector
+attr title "STM Reenviadas"
+vector 1 AdvancedRingNetwork.adm1 stmRecibida:vector ETV
+attr recordingmode vector
+attr title "STM Recibidas"
+vector 2 AdvancedRingNetwork.adm1 pdhRecibido:vector ETV
+attr recordingmode vector
+attr title "PDH Recibidos"
+vector 3 AdvancedRingNetwork.adm1 pdhTransmitido:vector ETV
+attr recordingmode vector
+attr title "PDH Transmitidos"
+vector 4 AdvancedRingNetwork.adm2 stmReenviada:vector ETV
+attr recordingmode vector
+attr title "STM Reenviadas"
+vector 5 AdvancedRingNetwork.adm2 stmRecibida:vector ETV
+attr recordingmode vector
+attr title "STM Recibidas"
+vector 6 AdvancedRingNetwork.adm2 pdhRecibido:vector ETV
+attr recordingmode vector
+attr title "PDH Recibidos"
+vector 7 AdvancedRingNetwork.adm2 pdhTransmitido:vector ETV
+attr recordingmode vector
+attr title "PDH Transmitidos"
+vector 8 AdvancedRingNetwork.adm3 stmReenviada:vector ETV
+attr recordingmode vector
+attr title "STM Reenviadas"
+vector 9 AdvancedRingNetwork.adm3 stmRecibida:vector ETV
+attr recordingmode vector
+attr title "STM Recibidas"
+vector 10 AdvancedRingNetwork.adm3 pdhRecibido:vector ETV
+attr recordingmode vector
+attr title "PDH Recibidos"
+vector 11 AdvancedRingNetwork.adm3 pdhTransmitido:vector ETV
+attr recordingmode vector
+attr title "PDH Transmitidos"
+vector 12 AdvancedRingNetwork.adm4 stmReenviada:vector ETV
+attr recordingmode vector
+attr title "STM Reenviadas"
+vector 13 AdvancedRingNetwork.adm4 stmRecibida:vector ETV
+attr recordingmode vector
+attr title "STM Recibidas"
+vector 14 AdvancedRingNetwork.adm4 pdhRecibido:vector ETV
+attr recordingmode vector
+attr title "PDH Recibidos"
+vector 15 AdvancedRingNetwork.adm4 pdhTransmitido:vector ETV
+attr recordingmode vector
+attr title "PDH Transmitidos"
+vector 16 AdvancedRingNetwork.adm5 stmReenviada:vector ETV
+attr recordingmode vector
+attr title "STM Reenviadas"
+vector 17 AdvancedRingNetwork.adm5 stmRecibida:vector ETV
+attr recordingmode vector
+attr title "STM Recibidas"
+vector 18 AdvancedRingNetwork.adm5 pdhRecibido:vector ETV
+attr recordingmode vector
+attr title "PDH Recibidos"
+vector 19 AdvancedRingNetwork.adm5 pdhTransmitido:vector ETV
+attr recordingmode vector
+attr title "PDH Transmitidos"
+10	3182 663984 5 177590 0.00003 0.49152 32768 1 1 32768 32768
+15	667166 701224 31 184985 0.000127 0.512002 32768 1 1 32768 32768
+2	1368390 641468 4 355189 0.00003 0.98304 32768 1 1 32768 32768
+10	2009858 684488 177598 355191 0.49155 0.98304 32768 1 1 32768 32768
+11	2694346 710653 33 355219 0.000129 0.983129 32768 1 1 32768 32768
+2	3404999 11236 355198 361309 0.98307 0.99999 565 1 1 565 565
+4	3416235 165520 30 361272 0.000127 0.999877 7999 1 1 7999 7999
+5	3581755 165520 30 361272 0.000127 0.999877 7999 1 1 7999 7999
+9	3747275 165520 33 361275 0.000129 0.999879 7999 1 1 7999 7999
+10	3912795 23602 355199 361311 0.98307 0.99999 1130 1 1 1130 1130
+11	3936397 12342 355219 361275 0.983129 0.999879 561 1 1 561 561
+13	3948739 173519 31 361273 0.000127 0.999877 7999 1 1 7999 7999
+15	4122258 686928 185029 361273 0.512127 0.999877 31224 1 1 31224 31224
+

@@ -10,6 +10,11 @@ void SDHADM::initialize() {
     stmLevel = par("stmLevel");
     allowMixedInsertion = par("allowMixedInsertion");
 
+    stmReenviadaSignal = registerSignal("stmReenviada");
+    pdhRecibidoSignal = registerSignal("pdhRecibido");
+    pdhTransmitidoSignal = registerSignal("pdhTransmitido");
+
+
     double bitrate = 155.52e6 * stmLevel;  // STM-n velocidad
     for (int i = 0; i < gateSize("lineOut"); ++i) {
         if (gate("lineOut", i)->isConnected()) {
@@ -83,6 +88,7 @@ void SDHADM::handleMessage(cMessage *msg) {
         if (index >= 0 && index < (int)tributaryBuffers.size()) {
             auto *pdhPacket = check_and_cast<cPacket*>(msg);
             tributaryBuffers[index].push(pdhPacket);
+            emit(pdhRecibidoSignal, 1);
         } else {
             delete msg;
         }
@@ -106,6 +112,7 @@ void SDHADM::handleMessage(cMessage *msg) {
                     auto *pdh = vc->getPayloads(j).dup();
                     simtime_t delay = j * packetSpacing;
                     sendDelayed(pdh, delay, "pdhOut", t);
+                    emit(pdhTransmitidoSignal, 1);
                     EV << "Sent PDH packet " << pdh->getName()
                        << " from VC[" << i << "] to pdhOut[" << t << "] at t+" << delay << endl;
 
@@ -166,6 +173,7 @@ void SDHADM::handleMessage(cMessage *msg) {
             for (int i = 0; i < gateSize("lineOut"); ++i) {
                 if (gate("lineOut", i)->isConnected()) {
                     send(newFrame->dup(), "lineOut", i);
+                    emit(stmReenviadaSignal,1);
                 }
             }
 

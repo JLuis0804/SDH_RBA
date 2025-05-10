@@ -1,5 +1,5 @@
 [RunModeProfiles]
-run-playback-speed=1
+run-playback-speed=0.36307805477010135
 run-min-playback-speed=0.01
 run-max-playback-speed=100
 run-min-animation-speed=nan
@@ -9,3 +9,7 @@ fast-min-playback-speed=1
 fast-max-playback-speed=1e+06
 fast-min-animation-speed=nan
 fast-max-animation-speed=nan
+
+[General]
+last-configname=STM-16
+last-runnumber=0

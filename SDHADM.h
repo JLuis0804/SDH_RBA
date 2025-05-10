@@ -15,6 +15,9 @@ class SDHADM : public omnetpp::cSimpleModule
     bool allowMixedInsertion = false; // Allows both inserting PDH data into STM frames and generating new STM frames
     std::vector<std::queue<omnetpp::cPacket*>> tributaryBuffers;
     cMessage *frameTimer = nullptr;
+    simsignal_t stmReenviadaSignal;
+    simsignal_t pdhRecibidoSignal;
+    simsignal_t pdhTransmitidoSignal;
 
     virtual void initialize() override;
     virtual void handleMessage(omnetpp::cMessage *msg) override;

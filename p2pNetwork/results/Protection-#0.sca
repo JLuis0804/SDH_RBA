@@ -1,8 +1,8 @@
 version 3
-run Protection-0-20250504-11:20:22-15456
+run Protection-0-20250508-20:38:17-15624
 attr configname Protection
-attr datetime 20250504-11:20:22
-attr datetimef 20250504-112022
+attr datetime 20250508-20:38:17
+attr datetimef 20250508-203817
 attr experiment Protection
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network p2pNetwork
-attr processid 15456
+attr processid 15624
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -94,19 +94,19 @@ par p2pNetwork.lteA numTributaries 1
 par p2pNetwork.lteA useProtection true
 par p2pNetwork.lteA protectionSwitchTime 0.5s
 attr unit s
-scalar p2pNetwork.lteA stmProtectionReceived:last 4000
+scalar p2pNetwork.lteA stmProtectionReceived:last nan
 attr recordingmode last
 attr source stmProtectionReceived
 attr title "STM received on protection line, last"
-scalar p2pNetwork.lteA stmWorkingReceived:last 3999
+scalar p2pNetwork.lteA stmWorkingReceived:last nan
 attr recordingmode last
 attr source stmWorkingReceived
 attr title "STM received on working line, last"
-scalar p2pNetwork.lteA stmProtectionSent:last 4001
+scalar p2pNetwork.lteA stmProtectionSent:last nan
 attr recordingmode last
 attr source stmProtectionSent
 attr title "STM sent on protection line, last"
-scalar p2pNetwork.lteA stmWorkingSent:last 3999
+scalar p2pNetwork.lteA stmWorkingSent:last 1
 attr recordingmode last
 attr source stmWorkingSent
 attr title "STM sent on working line, last"
@@ -116,19 +116,19 @@ par p2pNetwork.lteB numTributaries 1
 par p2pNetwork.lteB useProtection true
 par p2pNetwork.lteB protectionSwitchTime 0.5s
 attr unit s
-scalar p2pNetwork.lteB stmProtectionReceived:last 4000
+scalar p2pNetwork.lteB stmProtectionReceived:last nan
 attr recordingmode last
 attr source stmProtectionReceived
 attr title "STM received on protection line, last"
-scalar p2pNetwork.lteB stmWorkingReceived:last 3999
+scalar p2pNetwork.lteB stmWorkingReceived:last 1
 attr recordingmode last
 attr source stmWorkingReceived
 attr title "STM received on working line, last"
-scalar p2pNetwork.lteB stmProtectionSent:last 4001
+scalar p2pNetwork.lteB stmProtectionSent:last nan
 attr recordingmode last
 attr source stmProtectionSent
 attr title "STM sent on protection line, last"
-scalar p2pNetwork.lteB stmWorkingSent:last 3999
+scalar p2pNetwork.lteB stmWorkingSent:last 1
 attr recordingmode last
 attr source stmWorkingSent
 attr title "STM sent on working line, last"

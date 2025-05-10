@@ -1,9 +1,9 @@
-file 739046 1745314284                                          
+file 1062458 1746354448                                         
 version 3
-run STM-4-0-20250422-11:31:17-19524
+run STM-4-0-20250504-12:27:21-24648
 attr configname STM-4
-attr datetime 20250422-11:31:17
-attr datetimef 20250422-113117
+attr datetime 20250504-12:27:21
+attr datetimef 20250504-122721
 attr experiment STM-4
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -11,7 +11,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network p2pNetwork
-attr processid 19524
+attr processid 24648
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -61,30 +61,36 @@ attr source stmProtectionReceived
 attr title "STM received on protection line"
 vector 4 p2pNetwork.lteA loadSTM:vector ETV
 attr recordingmode vector
-attr source loadSTM
 attr title "load STM"
-vector 5 p2pNetwork.lteB stmWorkingSent:vector ETV
+vector 5 p2pNetwork.lteA tramasSTM:vector ETV
+attr recordingmode vector
+attr title "\"tramas STM\""
+vector 6 p2pNetwork.lteB stmWorkingSent:vector ETV
 attr recordingmode vector
 attr source stmWorkingSent
 attr title "STM sent on working line"
-vector 6 p2pNetwork.lteB stmProtectionSent:vector ETV
+vector 7 p2pNetwork.lteB stmProtectionSent:vector ETV
 attr recordingmode vector
 attr source stmProtectionSent
 attr title "STM sent on protection line"
-vector 7 p2pNetwork.lteB stmWorkingReceived:vector ETV
+vector 8 p2pNetwork.lteB stmWorkingReceived:vector ETV
 attr recordingmode vector
 attr source stmWorkingReceived
 attr title "STM received on working line"
-vector 8 p2pNetwork.lteB stmProtectionReceived:vector ETV
+vector 9 p2pNetwork.lteB stmProtectionReceived:vector ETV
 attr recordingmode vector
 attr source stmProtectionReceived
 attr title "STM received on protection line"
-vector 9 p2pNetwork.lteB loadSTM:vector ETV
+vector 10 p2pNetwork.lteB loadSTM:vector ETV
 attr recordingmode vector
-attr source loadSTM
 attr title "load STM"
-0	2812 180514 17 271981 0.000125 1 8000 1 8000 32004000 170698668000
-2	183326 187602 24 271954 0.000127 0.999877 7999 1 7999 31996000 170634668000
-5	370928 180514 18 271982 0.000125 1 8000 1 8000 32004000 170698668000
-7	551442 187602 23 271953 0.000127 0.999877 7999 1 7999 31996000 170634668000
+vector 11 p2pNetwork.lteB tramasSTM:vector ETV
+attr recordingmode vector
+attr title "\"tramas STM\""
+0	2978 180514 17 271981 0.000125 1 8000 1 8000 32004000 170698668000
+2	183492 187602 24 271954 0.000127 0.999877 7999 1 7999 31996000 170634668000
+4	371094 157623 17 271981 0.000125 1 8000 0.8 1 7999.8 7999.64
+6	528717 180514 18 271982 0.000125 1 8000 1 8000 32004000 170698668000
+8	709231 187602 23 271953 0.000127 0.999877 7999 1 7999 31996000 170634668000
+10	896833 165623 18 271982 0.000125 1 8000 0.8 1 7999.8 7999.64
 

@@ -1,9 +1,9 @@
-file 2787 1746341127                                            
+file 1062179 1746633500                                         
 version 3
-run STM-1-0-20250504-08:45:24-10776
+run STM-1-0-20250507-17:55:20-6788
 attr configname STM-1
-attr datetime 20250504-08:45:24
-attr datetimef 20250504-084524
+attr datetime 20250507-17:55:20
+attr datetimef 20250507-175520
 attr experiment STM-1
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -11,7 +11,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network p2pNetwork
-attr processid 10776
+attr processid 6788
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -54,11 +54,9 @@ attr source stmProtectionReceived
 attr title "STM received on protection line"
 vector 4 p2pNetwork.lteA loadSTM:vector ETV
 attr recordingmode vector
-attr source loadSTM
 attr title "load STM"
 vector 5 p2pNetwork.lteA tramasSTM:vector ETV
 attr recordingmode vector
-attr source loadSTM
 attr title "\"tramas STM\""
 vector 6 p2pNetwork.lteB stmWorkingSent:vector ETV
 attr recordingmode vector
@@ -78,10 +76,20 @@ attr source stmProtectionReceived
 attr title "STM received on protection line"
 vector 10 p2pNetwork.lteB loadSTM:vector ETV
 attr recordingmode vector
-attr source loadSTM
 attr title "load STM"
 vector 11 p2pNetwork.lteB tramasSTM:vector ETV
 attr recordingmode vector
-attr source loadSTM
 attr title "\"tramas STM\""
+0	2699 2959 17 5217 0.000125 0.01925 154 1 154 11935 1229305
+2	5658 3094 24 5224 0.000127 0.019252 154 1 154 11935 1229305
+4	8752 2761 17 5217 0.000125 0.01925 154 0.8 1 153.8 153.64
+6	11513 2959 18 5218 0.000125 0.01925 154 1 154 11935 1229305
+8	14472 3094 23 5223 0.000127 0.019252 154 1 154 11935 1229305
+10	17566 2915 18 5218 0.000125 0.01925 154 0.8 1 153.8 153.64
+0	20481 177555 5251 271981 0.019375 1 7846 155 8000 31992065 170697438695
+2	198036 184508 5258 271954 0.019377 0.999877 7845 155 7999 31984065 170633438695
+4	382544 154862 5251 271981 0.019375 1 7846 1 1 7846 7846
+6	537406 177555 5252 271982 0.019375 1 7846 155 8000 31992065 170697438695
+8	714961 184508 5257 271953 0.019377 0.999877 7845 155 7999 31984065 170633438695
+10	899469 162708 5252 271982 0.019375 1 7846 1 1 7846 7846
 

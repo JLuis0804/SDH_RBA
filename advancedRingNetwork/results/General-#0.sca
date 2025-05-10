@@ -1,0 +1,133 @@
+version 3
+run General-0-20250508-10:37:23-10764
+attr configname General
+attr datetime 20250508-10:37:23
+attr datetimef 20250508-103723
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network AdvancedRingNetwork
+attr processid 10764
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config network AdvancedRingNetwork
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayPacketDrops true
+config *.visualizer.*.displayLabels true
+config *.visualizer.*.animationSpeed 20
+config *.source*.packetInterval 30us
+config *.source*.packetSize 300
+config **.stmLevel 1
+config **.numTributaries 2
+
+par AdvancedRingNetwork.adm1.lineOut[0].channel typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork.FiberLine\""
+par AdvancedRingNetwork.adm1.lineOut[0].channel disabled false
+attr mutable ""
+par AdvancedRingNetwork.adm1.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par AdvancedRingNetwork.adm1.lineOut[0].channel datarate 1.5552e+08bps
+attr mutable ""
+attr unit bps
+par AdvancedRingNetwork.adm1.lineOut[0].channel ber 0
+attr mutable ""
+par AdvancedRingNetwork.adm1.lineOut[0].channel per 0
+attr mutable ""
+par AdvancedRingNetwork.adm2.lineOut[0].channel typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork.FiberLine\""
+par AdvancedRingNetwork.adm2.lineOut[0].channel disabled false
+attr mutable ""
+par AdvancedRingNetwork.adm2.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par AdvancedRingNetwork.adm2.lineOut[0].channel datarate 1.5552e+08bps
+attr mutable ""
+attr unit bps
+par AdvancedRingNetwork.adm2.lineOut[0].channel ber 0
+attr mutable ""
+par AdvancedRingNetwork.adm2.lineOut[0].channel per 0
+attr mutable ""
+par AdvancedRingNetwork.adm3.lineOut[0].channel typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork.FiberLine\""
+par AdvancedRingNetwork.adm3.lineOut[0].channel disabled false
+attr mutable ""
+par AdvancedRingNetwork.adm3.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par AdvancedRingNetwork.adm3.lineOut[0].channel datarate 1.5552e+08bps
+attr mutable ""
+attr unit bps
+par AdvancedRingNetwork.adm3.lineOut[0].channel ber 0
+attr mutable ""
+par AdvancedRingNetwork.adm3.lineOut[0].channel per 0
+attr mutable ""
+par AdvancedRingNetwork.adm4.lineOut[0].channel typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork.FiberLine\""
+par AdvancedRingNetwork.adm4.lineOut[0].channel disabled false
+attr mutable ""
+par AdvancedRingNetwork.adm4.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par AdvancedRingNetwork.adm4.lineOut[0].channel datarate 1.5552e+08bps
+attr mutable ""
+attr unit bps
+par AdvancedRingNetwork.adm4.lineOut[0].channel ber 0
+attr mutable ""
+par AdvancedRingNetwork.adm4.lineOut[0].channel per 0
+attr mutable ""
+par AdvancedRingNetwork.adm5.lineOut[0].channel typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork.FiberLine\""
+par AdvancedRingNetwork.adm5.lineOut[0].channel disabled false
+attr mutable ""
+par AdvancedRingNetwork.adm5.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par AdvancedRingNetwork.adm5.lineOut[0].channel datarate 1.5552e+08bps
+attr mutable ""
+attr unit bps
+par AdvancedRingNetwork.adm5.lineOut[0].channel ber 0
+attr mutable ""
+par AdvancedRingNetwork.adm5.lineOut[0].channel per 0
+attr mutable ""
+par AdvancedRingNetwork.adm1 typename "\"inet.node.sdh.SDHADM\""
+par AdvancedRingNetwork.adm1 stmLevel 1
+par AdvancedRingNetwork.adm1 numTributaries 2
+par AdvancedRingNetwork.adm1 allowMixedInsertion false
+par AdvancedRingNetwork.adm2 typename "\"inet.node.sdh.SDHADM\""
+par AdvancedRingNetwork.adm2 stmLevel 1
+par AdvancedRingNetwork.adm2 numTributaries 2
+par AdvancedRingNetwork.adm2 allowMixedInsertion false
+par AdvancedRingNetwork.adm3 typename "\"inet.node.sdh.SDHADM\""
+par AdvancedRingNetwork.adm3 stmLevel 1
+par AdvancedRingNetwork.adm3 numTributaries 2
+par AdvancedRingNetwork.adm3 allowMixedInsertion false
+par AdvancedRingNetwork.adm4 typename "\"inet.node.sdh.SDHADM\""
+par AdvancedRingNetwork.adm4 stmLevel 1
+par AdvancedRingNetwork.adm4 numTributaries 2
+par AdvancedRingNetwork.adm4 allowMixedInsertion false
+par AdvancedRingNetwork.adm5 typename "\"inet.node.sdh.SDHADM\""
+par AdvancedRingNetwork.adm5 stmLevel 1
+par AdvancedRingNetwork.adm5 numTributaries 2
+par AdvancedRingNetwork.adm5 allowMixedInsertion false
+par AdvancedRingNetwork.source1 typename "\"inet.node.sdh.PDHSource\""
+par AdvancedRingNetwork.source1 packetInterval 3e-05s
+attr unit s
+par AdvancedRingNetwork.source1 packetSize 300
+par AdvancedRingNetwork.sink1 typename "\"inet.node.sdh.PDHSink\""
+par AdvancedRingNetwork.source31 typename "\"inet.node.sdh.PDHSource\""
+par AdvancedRingNetwork.source31 packetInterval 3e-05s
+attr unit s
+par AdvancedRingNetwork.source31 packetSize 300
+par AdvancedRingNetwork.source32 typename "\"inet.node.sdh.PDHSource\""
+par AdvancedRingNetwork.source32 packetInterval 3e-05s
+attr unit s
+par AdvancedRingNetwork.source32 packetSize 300
+par AdvancedRingNetwork.sink3 typename "\"inet.node.sdh.PDHSink\""
+par AdvancedRingNetwork.sink4 typename "\"inet.node.sdh.PDHSink\""
+par AdvancedRingNetwork typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork\""
+

@@ -1,0 +1,90 @@
+file 3114 1746720202                                            
+version 3
+run General-0-20250508-16:55:09-10108
+attr configname General
+attr datetime 20250508-16:55:09
+attr datetimef 20250508-165509
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SimpleRingNetwork
+attr processid 10108
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config network SimpleRingNetwork
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.animationSpeed 20
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayLabels true
+config *.visualizer.*.displayPacketDrops true
+config *.lteSource.stmLevel 1
+config *.lteSink.stmLevel 1
+config *.lteSource.useProtection false
+config *.lteSink.useProtection false
+config *.adm*.numTributaries 1
+config *.adm*.stmLevel 1
+config *.source.packetInterval 20us
+config *.source.packetSize 150
+config *.lteSource.protectionSwitchTime -1s
+config *.lteSink.protectionSwitchTime -1s
+config **.scalar-recording true
+config **.vector-recording true
+
+vector 0 SimpleRingNetwork.adm1 stmReenviada:vector ETV
+attr recordingmode vector
+attr title "STM Reenviadas"
+vector 1 SimpleRingNetwork.adm1 pdhRecibido:vector ETV
+attr recordingmode vector
+attr title "PDH Recibidos"
+vector 2 SimpleRingNetwork.adm1 pdhTransmitido:vector ETV
+attr recordingmode vector
+attr title "PDH Transmitidos"
+vector 3 SimpleRingNetwork.adm2 stmReenviada:vector ETV
+attr recordingmode vector
+attr title "STM Reenviadas"
+vector 4 SimpleRingNetwork.adm2 pdhRecibido:vector ETV
+attr recordingmode vector
+attr title "PDH Recibidos"
+vector 5 SimpleRingNetwork.adm2 pdhTransmitido:vector ETV
+attr recordingmode vector
+attr title "PDH Transmitidos"
+vector 6 SimpleRingNetwork.adm3 stmReenviada:vector ETV
+attr recordingmode vector
+attr title "STM Reenviadas"
+vector 7 SimpleRingNetwork.adm3 pdhRecibido:vector ETV
+attr recordingmode vector
+attr title "PDH Recibidos"
+vector 8 SimpleRingNetwork.adm3 pdhTransmitido:vector ETV
+attr recordingmode vector
+attr title "PDH Transmitidos"
+vector 9 SimpleRingNetwork.adm4 stmReenviada:vector ETV
+attr recordingmode vector
+attr title "STM Reenviadas"
+vector 10 SimpleRingNetwork.adm4 pdhRecibido:vector ETV
+attr recordingmode vector
+attr title "PDH Recibidos"
+vector 11 SimpleRingNetwork.adm4 pdhTransmitido:vector ETV
+attr recordingmode vector
+attr title "PDH Transmitidos"
+vector 12 SimpleRingNetwork.adm5 stmReenviada:vector ETV
+attr recordingmode vector
+attr title "STM Reenviadas"
+vector 13 SimpleRingNetwork.adm5 pdhRecibido:vector ETV
+attr recordingmode vector
+attr title "PDH Recibidos"
+vector 14 SimpleRingNetwork.adm5 pdhTransmitido:vector ETV
+attr recordingmode vector
+attr title "PDH Transmitidos"
+1	2876 111 2 10 0.000029716049 0.000109716049 5 1 1 5 5
+3	2987 17 17 17 0.000127 0.000127 1 1 1 1 1
+8	3004 85 18 18 0.000129 0.000129 5 1 1 5 5
+1	3089 23 19 19 0.000129716049 0.000129716049 1 1 1 1 1
+
